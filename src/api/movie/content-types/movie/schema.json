@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "releaseYear": {
+      "type": "integer"
+    },
+    "director": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::director.director"
+    }
+  }
+}
